@@ -20,7 +20,6 @@ public class SeleccionarAgregarTask implements Task {
         actor.attemptsTo(
 
                 SeleccionAleatoria.click(),
-                //ObtenerNombreProducto.nombreProducto("producto1"),
                 Click.on(BTN_CARRITO),
                 Click.on(BTN_CERRARPOP)
 

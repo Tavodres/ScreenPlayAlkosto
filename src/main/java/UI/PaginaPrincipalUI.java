@@ -12,8 +12,7 @@ public class PaginaPrincipalUI {
             .locatedBy("//div[@class='cookies-button']//button");
 
 
-    public static Target BTN_BUSCAR=Target.the("Boton Buscar")
-            .locatedBy("//button[@id='js-search-button' and not(@disabled)]");
+
 
 
 }

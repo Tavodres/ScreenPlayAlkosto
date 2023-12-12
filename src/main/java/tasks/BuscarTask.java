@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
+import utils.Data;
 
 
 import static UI.PaginaPrincipalUI.*;
@@ -19,7 +20,7 @@ public class BuscarTask implements Task {
          actor.attemptsTo(
 
                 Click.on(TXT_BUSCAR),
-                Enter.theValue("TV").into(TXT_BUSCAR).thenHit(Keys.ENTER)
+                Enter.theValue(Data.extractTo().get(0).get("Producto")).into(TXT_BUSCAR).thenHit(Keys.ENTER)
 
         );
 
